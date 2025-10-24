@@ -1,5 +1,3 @@
-# This code is modified from https://github.com/facebookresearch/low-shot-shrink-hallucinate
-
 import torch
 from torch.autograd import Variable
 import torch.nn as nn
@@ -8,11 +6,6 @@ import numpy as np
 import torch.nn.functional as F
 from torch.nn.utils.weight_norm import WeightNorm
 from torch.distributions import Bernoulli
-
-
-##############################################
-#             Basic ResNet model             #
-##############################################
 
 def init_layer(L):
     # Initialization using fan-in
